@@ -1,5 +1,3 @@
-Here’s a more professional GitHub README for your project "ThreatDetector":
-
 ---
 
 # ThreatDetector
@@ -60,5 +58,3 @@ We welcome contributions to improve the tool! If you have suggestions, bug fixes
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-
-This template gives your repository a professional look with proper sections for features, installation, usage, contributing, and licensing. You can customize further according to your specific needs.
