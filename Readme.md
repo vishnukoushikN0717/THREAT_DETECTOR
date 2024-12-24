@@ -1,47 +1,97 @@
 ```markdown
-# ThreatDetector Tool Usage Guide
+# ThreatDetector Tool
 
-Follow these steps to run the ThreatDetector tool:
-
----
-
-## 1. Setup
-- Extract the folder. Ensure the `ThreatDetector` directory and the `sample_files` folder (or any PHP project folder) are in the same parent directory.
+ThreatDetector is a powerful tool for scanning vulnerabilities in PHP projects. Follow the instructions below to set it up and run effectively.
 
 ---
 
-## 2. Configuration
-- Open the **config file** inside the `ThreatDetector` directory.
-- Locate this line:
-  ```javascript
-  DEFAULT_PROJECT_PATH_TO_SCAN: "../sample_files/"
-  ```
-- Replace `sample_files` with the name of the PHP project folder you want to test.  
-  **Note**: Folder names are case-sensitive.
-
-> The tool will scan all PHP files located in the `sample_files` folder or any folder you provide.
+## Features
+- Automatically scans all PHP files in the specified folder.
+- Displays detected vulnerabilities in the terminal.
+- Generates detailed HTML reports for better analysis.
 
 ---
 
-## 3. Running the Tool
-- Navigate to the `ThreatDetector` directory in your terminal.
-- Run the following command:
-  ```bash
-  node main.js
-  ```
-- The terminal will display all detected vulnerabilities.
+## Prerequisites
+- Ensure you have **Node.js** installed on your system.
 
 ---
 
-## 4. Viewing Detailed Reports
-- Open the `index.html` file in the `ThreatDetector` directory for detailed information about the vulnerabilities.
+## Setup Instructions
+
+### Step 1: Extract the Files
+- Extract the `ThreatDetector` folder to your desired location.
+- Ensure that the `ThreatDetector` folder and your PHP project folder (e.g., `sample_files`) are in the same parent directory.
+
+### Step 2: Configure the Tool
+1. Open the `config.js` file located inside the `ThreatDetector` directory.
+2. Look for the following line:
+   ```javascript
+   DEFAULT_PROJECT_PATH_TO_SCAN: "../sample_files/"
+   ```
+3. Replace `sample_files` with the name of the folder containing the PHP files you want to scan.  
+   **Example**: If your folder name is `my_php_project`, update it as:
+   ```javascript
+   DEFAULT_PROJECT_PATH_TO_SCAN: "../my_php_project/"
+   ```
+4. **Note**: Folder names are case-sensitive.
 
 ---
 
-## 5. Additional Information
-- The HTML file provides an in-depth report of the vulnerabilities scanned.
+## How to Run the Tool
+
+1. Open your terminal and navigate to the `ThreatDetector` directory:
+   ```bash
+   cd path/to/ThreatDetector
+   ```
+2. Run the following command:
+   ```bash
+   node main.js
+   ```
+3. The terminal will display all detected vulnerabilities in your PHP files.
 
 ---
 
-Enjoy using the ThreatDetector tool! 🎉
+## Viewing Reports
+
+1. After running the tool, open the `index.html` file located in the `ThreatDetector` directory.
+2. This file provides a detailed report of all the vulnerabilities detected during the scan.
+
+---
+
+## Additional Information
+- The tool scans all PHP files in the specified folder.
+- Reports are designed to be developer-friendly for easy debugging.
+
+---
+
+## Example Usage
+
+### Folder Structure
+```
+parent_directory/
+├── ThreatDetector/
+│   ├── config.js
+│   ├── main.js
+│   ├── index.html
+│   └── ...
+├── sample_files/
+│   ├── file1.php
+│   ├── file2.php
+│   └── ...
+```
+
+### Command to Run
+```bash
+node main.js
+```
+
+---
+
+## License
+This project is licensed under [MIT License](LICENSE).
+
+---
+
+Feel free to contribute and raise issues if you encounter any problems! 🚀
 ```
