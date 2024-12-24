@@ -1,6 +1,5 @@
 ---
-
-# ThreatDetector
+## ThreatDetector
 
 **ThreatDetector** is a lightweight and efficient vulnerability scanning tool designed to analyze PHP projects. It scans for potential security issues and provides detailed reports to developers. This tool ensures that your PHP applications are secure and maintain high-quality standards.
 
